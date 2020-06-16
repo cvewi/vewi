@@ -1,0 +1,20 @@
+baseURL = "http://example.org/"
+languageCode = "en"
+defaultContentLanguage = "en"
+title = "Veggerby Wittrup"
+theme = "hallo" 
+disableKinds = ["page", "section", "taxonomy", "taxonomyTerm"]
+
+[Author]
+    name = "Veggerby Wittrup Family"
+
+[params]
+
+    [[params.links]]
+        iconset = "fas"
+        icon = "envelope"
+        title = "E-mail"
+        url = "mailto:family@vewi.dk"
+
+
+    
