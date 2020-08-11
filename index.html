@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veggerby Wittrup</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/31e715396f.js" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="left-portrait">
+                <img src="images/portrait.jpg" class="portrait">
+            </div>
+            <div class="right-header">
+                <h1>Hallo, Hola, Hej</h1>
+                <h2>We are the Veggerby Wittrup Family</h2>
+                <p>Welcome to our little space on the internet</p>
+                <p><a href="#" onclick="contactbox()" title="Contact us"><span class="fas fa-envelope"></span></a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div id="footer-contact">
+                <h2>Contact us</h2>
+                <form name='contact' method='POST'>
+                    <input type='hidden' name='form-name' value='contact' />
+                    <p>
+                    <label><input type="text" name="name" placeholder="Your Name"/></label>   
+                    <label><input type="email" name="email" placeholder="E-mail"/></label>
+                    </p>
+                    <p>
+                    <label><textarea name="message" placeholder="What's on your mind?"></textarea></label>
+                    </p>
+                    <p>
+                    <button type="submit">Send</button>
+                    </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
