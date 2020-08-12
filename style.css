@@ -120,7 +120,7 @@ footer #footer-contact button{
 
 footer #footer-contact button:hover{
     padding: 12px 10px;
-    margin: 8px 0;
+    margin: 1px 0;
     box-sizing: border-box;
     border: 0.2em solid rgb(19, 129, 102);
     font-size: 1em;
