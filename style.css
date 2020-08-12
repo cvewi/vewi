@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 html {
     min-height: 100%;
-    font-size:16px;
     font-family: 'Oxygen', sans-serif;
     overflow-y: auto;
 }
@@ -9,22 +8,24 @@ body {
     background-image: linear-gradient(to bottom right, rgb(196, 255, 228), rgb(89, 143, 119));
     color:white;
     margin: 0;
+    font-size: calc(16px+1vw);
+    line-height: calc(1.1em + 0.5vw);
 }
 
 h1 {
-    font-size: 4vw;
+    font-size: calc(1.2em + 3vw);
     text-shadow: 0.1em 0.1em 0 rgb(34, 173, 139);
 }
 
 h2 {
-    font-size: 2vw;
+    font-size: calc(1.0em + 1vw);
 }
 
 a {
     color:white;
-    -webkit-transition:color 0.5s ease-out;
-    -moz-transition:color 0.5s ease-out;
-    transition:color 0.5s ease-out;
+    -webkit-transition:color 0.3s ease-out;
+    -moz-transition:color 0.3s ease-out;
+    transition:color 0.3s ease-out;
 }
 
 a:hover {
@@ -97,7 +98,7 @@ footer #footer-contact input{
 }
 
 footer #footer-contact textarea{
-    width: 80.8vw;
+    width: 80.4vw;
     max-width: 804px;
     padding: 12px 10px;
     margin: 1px 0;
@@ -127,4 +128,24 @@ footer #footer-contact button:hover{
     font-weight: bold;
     background-color: rgb(19, 129, 102);
     color: white;
+}
+
+/* Mobile specific viewpoints */
+@media (max-width: 992px){ 
+    body {
+        margin: 1em;
+    }
+    img.portrait{
+        box-sizing:border-box;
+        border-radius:50%;
+        border:0.5em solid #fff;
+        margin:2em 3em;
+        width:100%;
+        height:auto;
+        max-width:250px;
+        max-height:250px;
+    }
+    main .container {
+        padding-top: 1vh;
+    }
 }
